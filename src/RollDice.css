@@ -1,0 +1,33 @@
+.RollDice{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.RollDice .RollDice-dice-container{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.RollDice-button{
+    width: 20rem;
+    margin: 10px auto;
+    padding: 1rem;
+    font-size: large;
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all ease 200ms;
+}
+
+.RollDice-button:disabled:hover{
+    background-color: rgb(124, 124, 124);
+}
+
+.RollDice-button:hover{
+    background-color: slateblue;
+}
