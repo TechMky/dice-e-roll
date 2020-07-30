@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/dice-e-roll/static/css/main.6c46827f.chunk.css",
+    "main.js": "/dice-e-roll/static/js/main.d593e29a.chunk.js",
+    "main.js.map": "/dice-e-roll/static/js/main.d593e29a.chunk.js.map",
+    "runtime-main.js": "/dice-e-roll/static/js/runtime-main.710e5b2f.js",
+    "runtime-main.js.map": "/dice-e-roll/static/js/runtime-main.710e5b2f.js.map",
+    "static/js/2.d33b2eec.chunk.js": "/dice-e-roll/static/js/2.d33b2eec.chunk.js",
+    "static/js/2.d33b2eec.chunk.js.map": "/dice-e-roll/static/js/2.d33b2eec.chunk.js.map",
+    "index.html": "/dice-e-roll/index.html",
+    "precache-manifest.412859e9f073a6c974337f0c26ae8a63.js": "/dice-e-roll/precache-manifest.412859e9f073a6c974337f0c26ae8a63.js",
+    "service-worker.js": "/dice-e-roll/service-worker.js",
+    "static/css/main.6c46827f.chunk.css.map": "/dice-e-roll/static/css/main.6c46827f.chunk.css.map",
+    "static/js/2.d33b2eec.chunk.js.LICENSE.txt": "/dice-e-roll/static/js/2.d33b2eec.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.710e5b2f.js",
+    "static/js/2.d33b2eec.chunk.js",
+    "static/css/main.6c46827f.chunk.css",
+    "static/js/main.d593e29a.chunk.js"
+  ]
+}
