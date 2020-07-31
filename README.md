@@ -1,3 +1,6 @@
+
+![Deployment](https://github.com/TechMky/dice-e-roll/workflows/Deployment/badge.svg)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
