@@ -1,15 +1,23 @@
 import React, { Component } from 'react'
 import Dice from './Dice'
+import History from './History'
 import './RollDice.css'
 
 type RollDiceProps ={
 
 }
 
+export type HistoryType = Array<{
+    dice1: number
+    dice2: number
+    dateTime: Date
+}>
+
 type RollDiceState = {
     firstDiceValue: number
     secondDiceValue: number
     isRolling: boolean
+    history: HistoryType 
 }
 
 function getRandomFaceValue() {
@@ -20,7 +28,8 @@ export default class RollDice extends Component<RollDiceProps, RollDiceState> {
     state: RollDiceState = {
         firstDiceValue: getRandomFaceValue(),
         secondDiceValue: getRandomFaceValue(),
-        isRolling: false
+        isRolling: false,
+        history: []
     }
 
     handleRollDice = (e: React.MouseEvent) => {
@@ -31,7 +40,10 @@ export default class RollDice extends Component<RollDiceProps, RollDiceState> {
         })
 
         setTimeout(() => {
-            this.setState({ isRolling: false })
+            this.setState( (prevState) => ({
+                isRolling: false,
+                history: [ { dice1: prevState.firstDiceValue, dice2: prevState.secondDiceValue, dateTime: new Date() } , ...prevState.history]
+            }) )
         }, 1000);
     }
 
@@ -46,7 +58,7 @@ export default class RollDice extends Component<RollDiceProps, RollDiceState> {
                 <button className="RollDice-button" disabled={this.state.isRolling} onClick={this.handleRollDice}>
                     { this.state.isRolling ? "Rolling..." : "Roll Dice" }
                 </button>
-                
+                <History history={this.state.history}/>
             </div>
         )
     }

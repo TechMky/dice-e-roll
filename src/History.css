@@ -1,0 +1,36 @@
+
+.History ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    margin: 0 auto;
+    overflow: overlay;
+    max-height: 65vh;
+    padding: 0 2rem;
+}
+
+.History-item{
+    border: 1px solid slateblue;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.History-outcome{
+    font-weight: bold;
+
+}
+
+.History-outcome {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: baseline; */
+}
+
+.History-total{
+    color: slateblue;
+    font-size: 2rem;
+}
